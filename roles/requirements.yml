@@ -1,0 +1,3 @@
+- name: aadl.evergreenils-database
+  src: https://github.com/aadl-ansible/evergreenils-database
+  version: master

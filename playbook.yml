@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks:
+    - name: Import tasks from role
+      include_vars:
+        file: roles/aadl.evergreenils-database/defaults/main.yml
+    - name: Run just the evergreen-database and not ANXS
+      include_tasks:
+        file: roles/aadl.evergreenils-database/tasks/main.yml
+
